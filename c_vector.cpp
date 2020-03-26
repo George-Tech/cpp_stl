@@ -22,14 +22,21 @@ void visit_c_vector()
 	}
 }
 
-void insert_c_vector()
+void insert_delete_c_vector()
 {
 	//emplace 第一个参数是一个迭代器，它确定了对象生成的位置。
 	//对象会被插入到迭代器所指定元素的后面。第一个参数后的参数，都作为插入元素的构造函数的参数传入
-	vector<int> nums{0,3};
+	vector<int> nums{0,3,4,5,6};
 	vector<int>::iterator iter = nums.emplace(++nums.begin(), 1);
-	nums.emplace(++iter, 2);
+	iter = nums.emplace(++iter, 2);
 	//insert
-	nums.insert(iter, 10);
+	iter = nums.insert(iter, 10);
+	//delete
+	//delete all : nums.clear();
+	nums.push_back(11);//加入尾部
+	nums.pop_back();//删除末尾
+	//erase
+	nums.erase(iter);
+	nums.erase(++nums.begin(), --nums.end());
 	int a = 1;
 }

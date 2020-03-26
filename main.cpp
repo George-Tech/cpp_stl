@@ -5,6 +5,6 @@
 int main()
 {
 	cout << "let's begin!" << endl;
-	insert_c_vector();
+	visit_c_list();
 	return 0;
 }
