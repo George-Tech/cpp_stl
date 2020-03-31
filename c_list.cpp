@@ -114,8 +114,8 @@ void c_forwad_list()
 	// Outputs 87
 	//forward_list 包含成员函数splice_after() 和 insert_after()，
 	//用来代替 list 容器的 splice() 和 insert()；
-	std::forward_list<std::string> my_words{ "three", "six", "eight" };
+	std::forward_list<std::string> my_words2{ "three", "six", "eight" };
 	std::forward_list<std::string> your_words{ "seven", "four", "nine" };
-	my_words.splice_after(my_words.before_begin(), your_words, ++std::begin(your_words));
+	my_words.splice_after(my_words2.before_begin(), your_words, ++std::begin(your_words));
 	//forward_list 和 list —样都有成员函数 sort() 和 merge()，它们也都有 remove()、remove_if() 和unique()，所有这些函数的用法都和 list 相同
 }

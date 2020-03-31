@@ -5,6 +5,10 @@
 #include <queue>
 #include <list>
 #include <forward_list>
+#include <stack>
+#include <queue>
+#include <functional>
+#include <map>
 using namespace std;
 
 void init_c_string();
@@ -24,3 +28,8 @@ void put_c_list();
 void sort_c_list();
 void visit_c_list();
 void c_forwad_list();
+
+void init_c_map();
+void insert_c_map();
+void visit_c_map();
+void opt_c_pair();

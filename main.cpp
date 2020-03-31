@@ -5,6 +5,6 @@
 int main()
 {
 	cout << "let's begin!" << endl;
-	visit_c_list();
+	opt_c_pair();
 	return 0;
 }
