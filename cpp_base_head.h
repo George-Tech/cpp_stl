@@ -9,6 +9,7 @@
 #include <queue>
 #include <functional>
 #include <map>
+#include <set>
 using namespace std;
 
 void init_c_string();
@@ -33,3 +34,6 @@ void init_c_map();
 void insert_c_map();
 void visit_c_map();
 void opt_c_pair();
+
+void init_c_set();
+void put_c_set();

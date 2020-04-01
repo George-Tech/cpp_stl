@@ -53,4 +53,10 @@ void put_c_set()
 	n = numbers.erase(13);
 	set_print(numbers);
 	numbers.clear();
+
+	//set 的成员函数 find() 会返回一个和参数匹配的元素的迭代器。如果对象不在 set 中，会返回一个结束迭代器
+	std::set<string> words_{ "one", "two", "three", "four", "five" };
+	auto iter_ = words_.find("one"); // iter points to "one"
+	iter_ = words_.find(string{ "two" });   // iter points to "two"
+	iter_ = words_.find("six");   // iter is std:: end (words)
 }
