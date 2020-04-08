@@ -5,6 +5,6 @@
 int main()
 {
 	cout << "let's begin!" << endl;
-	test_sort();
+	cic_matrix(4,5);
 	return 0;
 }
